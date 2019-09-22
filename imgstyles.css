@@ -1,0 +1,51 @@
+.fig {
+    display: block; /* Блочный элемент (для старых браузеров) */
+    text-align: center; /* Выравнивание по центру */
+    font-style: italic; /* Курсивное начертание */
+    margin-top: 0; /* Отступ сверху */
+    margin-bottom: 5px; /* Отступ снизу */
+    color: #666; /* Цвет подрисуночной подписи */
+}
+
+.CPU {
+    display: block;
+    text-align: center;
+    z-index: 2;
+}
+
+.txt {
+    font-family: Consolas, serif;
+    text-align: center;
+}
+.stopb {
+    background-image: url("img/stopb.png");
+    opacity: 0.38;
+    left: 875px;
+    top: 224px;
+    width: 126px;
+    height: 23px;
+    z-index: 3;
+}
+.startb {
+    background-image: url("img/startb.png");
+    opacity: 0.38;
+    left: 875px;
+    top: 254px;
+    width: 126px;
+    height: 19px;
+    z-index: 4;
+}
+
+.container {
+    position: relative;
+}
+
+.container img {
+    width: 1000%;
+    height: auto;
+}
+
+.container .btn {
+
+}
+
