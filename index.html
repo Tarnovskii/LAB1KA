@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>KA LAB1</title>
-    <script src = "index.js"></script>
+    <script async src = "index.js"></script>
 
     <link rel = "stylesheet" href = "imgstyles.css">
 </head>
@@ -12,9 +12,24 @@
         <h1 class="txt">Лабораторна робота №1</h1>
     </div>
     <div class="CPU">
-        <img src="" alt="" class="stopb">
-        <img src="" alt="" class="startb">
         <img src="img/CPU.png" alt="No picture here">
+        <div class = def>
+            <img id = "status" src="" alt="" class="progress">
+        </div>
+        <div class = def>
+            <button id = "startb" class="sbutton">Кнопка старт</button>
+            <button id = "stopb" class="pbutton">Кнопка стоп</button>
+        </div> <br/>
+        <label>
+            <b id = "delayText" class="txt">
+                Затримка: (200 мс.)
+            </b> <br/>
+            <input id = "delayInput" type="range" min="0" max="1000" step="10" value="200" oninput = "delayConfig()" style="width: 656px">
+        </label> <br/>
+        <p class="txt">LOG:</p>
+        <div id = "logConteiner" class="log">
+            <pre id = log class = "txt" style="margin: 0; display: inline-block; text-align: left"></pre>
+        </div>
     </div>
 </body>
 

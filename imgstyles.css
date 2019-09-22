@@ -1,51 +1,100 @@
-.fig {
-    display: block; /* Блочный элемент (для старых браузеров) */
-    text-align: center; /* Выравнивание по центру */
-    font-style: italic; /* Курсивное начертание */
-    margin-top: 0; /* Отступ сверху */
-    margin-bottom: 5px; /* Отступ снизу */
-    color: #666; /* Цвет подрисуночной подписи */
-}
-
 .CPU {
-    display: block;
+    position: relative;
+    display: inline-block;
     text-align: center;
-    z-index: 2;
 }
 
 .txt {
     font-family: Consolas, serif;
     text-align: center;
 }
-.stopb {
-    background-image: url("img/stopb.png");
-    opacity: 0.38;
-    left: 875px;
-    top: 224px;
-    width: 126px;
-    height: 23px;
-    z-index: 3;
-}
-.startb {
-    background-image: url("img/startb.png");
-    opacity: 0.38;
-    left: 875px;
-    top: 254px;
-    width: 126px;
-    height: 19px;
-    z-index: 4;
+
+.def {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 656px;
+    height: 166px;
 }
 
-.container {
+
+.sbutton{
+    cursor: pointer;
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    box-shadow: 0 3px #999;
+
+    background-color: green;
+    border: 0;
     position: relative;
+    width: 128px;
+    height: 25px;
+    top: 98px;
+    left: 321px;
 }
 
-.container img {
-    width: 1000%;
-    height: auto;
+.pbutton{
+    cursor: pointer;
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    box-shadow: 0 3px #999;
+
+    border: 0;
+    background-color: red;
+    position: relative;
+    width: 128px;
+    height: 21px;
+    top: 126px;
+    left: 189px;
 }
 
-.container .btn {
+.pbutton:hover {background-color: darkred}
 
+.pbutton:active {
+    background-color: darkred;
+    box-shadow: 0 1px #666;
+    transform: translateY(4px);
 }
 
+.sbutton:hover {background-color: darkgreen}
+
+.sbutton:active {
+    background-color: darkgreen;
+    box-shadow: 0 1px #666;
+    transform: translateY(4px);
+}
+
+.progress {
+    z-index: 0;
+    visibility: visible;
+    position: relative;
+    top: 57px;
+    left: 255px;
+}
+
+.status {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 656px;
+    height: 166px;
+}
+
+.log {
+    overflow-y: scroll;
+    text-align: left;
+    margin: 5px;
+    display: block;
+    border: 1px solid black;
+    position: absolute;
+    top: 300px;
+    left: 0;
+    width: 656px;
+    height: 166px;
+}
